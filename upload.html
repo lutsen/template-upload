@@ -1,0 +1,12 @@
+<div class="form-group">
+	<label for="{{ property.name }}" class="col-sm-2 control-label">{{ property.description }}</label>
+	<div class="col-sm-10">
+		<input type="file" class="form-control" id="{{ property.name }}" name="{{ property.name }}">
+{% if bean[property.name] and bean[property.name]|length > 0 %}
+		<span class="help-block">
+			<img src="{{ app_url }}{{ bean[property.name] }}" width="50">
+		</span>
+{% endif %}
+	</div>
+}
+</div>
