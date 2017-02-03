@@ -4,7 +4,13 @@
 		<input type="file" class="form-control" id="{{ property.name }}" name="{{ property.name }}">
 {% if bean[property.name] and bean[property.name]|length > 0 %}
 		<span class="help-block">
-			<img src="{{ app_url }}{{ bean[property.name] }}" width="50">
+{%	if bean[property.name]|split('.')|last|lower in ['jpg','jpeg','gif','png'] %}
+			<a href="{{ app_url }}{{ bean[property.name] }}" target="_blank">
+				<img src="{{ app_url }}{{ bean[property.name] }}" width="50">
+			</a>
+{%	else %}
+			<a href="{{ app_url }}{{ bean[property.name] }}" target="_blank">{{ bean[property.name] }}</a>
+{%	endif %}
 		</span>
 {% endif %}
 	</div>
