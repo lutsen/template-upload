@@ -1,4 +1,4 @@
-[<img src="https://cdn.rawgit.com/lutsen/lagan/master/lagan-logo.svg" width="100" alt="Lagan">](https://github.com/lutsen/lagan)
+[<img src="https://cdn.jsdelivr.net/gh/lutsen/lagan@master/lagan-logo.svg" width="100" alt="Lagan">](https://github.com/lutsen/lagan)
 
 Lagan Properties File Upload Template
 =====================================
